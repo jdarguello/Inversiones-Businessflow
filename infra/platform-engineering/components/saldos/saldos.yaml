@@ -1,0 +1,11 @@
+apiVersion: bancolombia.businessflows/v1
+kind: Micro
+metadata:
+  namespace: saldos
+  name: saldos
+spec:
+  image: nginx
+  replicas: 5
+  aws-resources:
+    region: us-east-1
+    db-name: saldos
